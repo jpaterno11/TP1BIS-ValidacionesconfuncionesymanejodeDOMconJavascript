@@ -10,8 +10,8 @@ function validarForm()
     }
     else{
         calcularPromedio();
+        
     }
-
 }
 function mostrarMensaje(id) {
     document.getElementById(id).style.opacity = 1;
