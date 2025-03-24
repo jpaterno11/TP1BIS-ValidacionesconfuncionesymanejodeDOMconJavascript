@@ -11,24 +11,25 @@
                 <div>
                     <label for="notaMatematica">Ingrese su nota de matematica</label>
                     <input type="text" id='notaMatematica' onfocus="mostrarMensaje('mensajeA')" onblur ="esconderMensaje('mensajeA')"  onkeyup="confirmarNota('notaMatematica','mensajeA')">
-                        <span class="mensaje" id="mensajeA">Ingrese su nombre (al menos 3 caracteres)</span><br>
+                        <span class="mensaje" id="mensajeA">Ingrese la nota, debe ser mayor a 0 y menor a 11</span><br>
                 </div>
                 <div>
                     <label for="notaLengua">Ingrese su nota de lengua</label>
                     <input type="text" id='notaLengua' onfocus="mostrarMensaje('mensajeB')" onblur ="esconderMensaje('mensajeB')"  onkeyup="confirmarNota('notaLengua', 'mensajeB')">
-                        <span class="mensaje" id="mensajeB">Ingrese su nombre (al menos 3 caracteres)</span><br>
+                        <span class="mensaje" id="mensajeB">Ingrese la nota, debe ser mayor a 0 y menor a 11</span><br>
                 </div>
                 <div>
                     <label for="notaEFSI">Ingrese su nota de EFSI</label>
                     <input type="text" id='notaEFSI' onfocus="mostrarMensaje('mensajeC')" onblur ="esconderMensaje('mensajeC')"  onkeyup="confirmarNota('notaEFSI', 'mensajeC')">
-                        <span class="mensaje" id="mensajeC">Ingrese su nombre (al menos 3 caracteres)</span><br>
+                        <span class="mensaje" id="mensajeC">Ingrese la nota, debe ser mayor a 0 y menor a 11</span><br>
                 </div>
                 <div>
                     <button type="submit">Calcular promedio</button>
                 </div>
     </form>
         <div id="Resultado"></div>
+        <button onclick="mostrarMasAlta()">Mostrar la materia con la nota mas alta</button>
         <div id="MateriaAlta"></div>
-<script src="script.js"></script>
+<script src="funciones.js"></script>
 </body>
 </html>
